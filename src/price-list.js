@@ -9,13 +9,13 @@ export const getPrice = (itemId, quantity) => {
 
   let unitPrice;
 
-  let testGitHubWork;
+  let turha;
 
-  priceList.forEach(item => {
+  aPriceList.forEach(item => {
       if(item.itemid === itemId) {            
           item.prices.forEach(priceLevel => {
               if (priceLevel.qty <= quantity) {
-                  unitPrice = priceLevel.price;
+                  unitPrice = aPriceList.price;
               }
           });  
       }
