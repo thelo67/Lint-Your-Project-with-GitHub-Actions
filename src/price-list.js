@@ -9,8 +9,6 @@ export const getPrice = (itemId, quantity) => {
 
   let unitPrice;
 
-  let turhaa;
-
   aPriceList.forEach(item => {
       if(item.itemid === itemId) {            
           item.prices.forEach(priceLevel => {
