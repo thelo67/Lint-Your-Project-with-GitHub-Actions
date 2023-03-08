@@ -9,6 +9,8 @@ export const getPrice = (itemId, quantity) => {
 
   let unitPrice;
 
+  let testGitHubWorkflow;
+
   priceList.forEach(item => {
       if(item.itemid === itemId) {            
           item.prices.forEach(priceLevel => {
@@ -20,7 +22,7 @@ export const getPrice = (itemId, quantity) => {
   });
 
   return quantity * unitPrice;
-   
+
 };
 
 export const priceList = {
