@@ -6,7 +6,21 @@ export const setPriceList = (priceList) => {
 };
 
 export const getPrice = (itemId, quantity) => {
-  return 188.75;
+
+  let unitPrice;
+
+  priceList.forEach(item => {
+      if(item.itemid === itemId) {            
+          item.prices.forEach(priceLevel => {
+              if (priceLevel.qty <= quantity) {
+                  unitPrice = priceLevel.price;
+              }
+          });  
+      }
+  });
+
+  return quantity * unitPrice;
+   
 };
 
 export const priceList = {
