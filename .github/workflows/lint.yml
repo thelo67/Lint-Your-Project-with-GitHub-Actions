@@ -4,10 +4,10 @@ name: Lint
 
 on:
   pull_request:
-  branches:
-    - development
-    - staging
-    - main
+    branches:
+      - development
+      - staging
+      - main
 
 env:
   NODE_VERSION: 16
