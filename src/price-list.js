@@ -9,7 +9,7 @@ export const getPrice = (itemId, quantity) => {
 
   let unitPrice;
 
-  let turha;
+  let turhaa;
 
   aPriceList.forEach(item => {
       if(item.itemid === itemId) {            
